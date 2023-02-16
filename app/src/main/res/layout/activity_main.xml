@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Game"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/stone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/game"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/paper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/game"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/scissor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/game"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>
